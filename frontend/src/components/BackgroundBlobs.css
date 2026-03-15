@@ -1,0 +1,53 @@
+.blobs-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.blob {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+[data-theme="light"] .blobs-container {
+  opacity: 0.4;
+}
+
+[data-theme="dark"] .blobs-container {
+  display: none;
+}
+
+[data-theme="light"] .blob {
+  mix-blend-mode: multiply;
+}
+
+/* Colors */
+.blob-1 {
+  top: -10%;
+  left: -10%;
+  background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+}
+
+.blob-2 {
+  bottom: -10%;
+  right: -10%;
+  background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
+}
+
+.blob-3 {
+  top: 40%;
+  left: 30%;
+  background: radial-gradient(circle, #ec4899 0%, transparent 70%);
+}
+
+/* Animations are handled by framer-motion in JSX */

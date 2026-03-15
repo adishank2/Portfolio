@@ -1,0 +1,16 @@
+.footer {
+  border-top: var(--glass-border);
+  padding: 24px;
+  transition: border-color var(--transition-normal);
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}

@@ -1,0 +1,79 @@
+.resume-page {
+  padding-bottom: 40px;
+}
+
+/* ========== RESUME ACTIONS ========== */
+.resume-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.resume-actions__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.resume-actions__btn--primary {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.resume-actions__btn--primary:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.resume-actions__btn--secondary {
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.resume-actions__btn--secondary:hover {
+  border-color: var(--text-tertiary);
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+/* ========== RESUME VIEWER (iframe) ========== */
+.resume-viewer {
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-md);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.resume-viewer__iframe {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  border: none;
+  display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 640px) {
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .resume-actions__btn {
+    justify-content: center;
+  }
+
+  .resume-viewer__iframe {
+    height: 60vh;
+    min-height: 400px;
+  }
+}
