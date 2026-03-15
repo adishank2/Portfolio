@@ -3,8 +3,9 @@ const { open } = require('sqlite');
 
 // Open or create the SQLite database file
 async function getDB() {
+  const dbPath = process.env.DATABASE_PATH || './portfolio.db';
   return open({
-    filename: './portfolio.db',
+    filename: dbPath,
     driver: sqlite3.Database
   });
 }

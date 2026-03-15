@@ -14,19 +14,44 @@ A modern, high-performance portfolio website built with React, Node.js, and SQLi
 - `/frontend`: React + Vite application.
 - `/backend`: Node.js + Express API with SQLite.
 
-## Getting Started
+## 🚀 Deployment Guide
+
+### 1. Backend (Render.com)
+1. **New Web Service**: Connect your GitHub repo.
+2. **Root Directory**: `backend`
+3. **Environment Variables**:
+   - `PORT`: `5000`
+   - `EMAIL_USER`: Your Gmail
+   - `EMAIL_PASS`: Your Google App Password
+   - `DATABASE_PATH`: `/var/lib/data/portfolio.db`
+4. **Persistent Disk (Crucial for SQLite)**:
+   - Go to **Advanced** > **Add Disk**.
+   - Name: `data`
+   - Mount Path: `/var/lib/data`
+   - Size: `1GB` (Minimum)
+5. **Initial Setup**: Once live, use the Render "Shell" to run `node seed.js` to populate your projects.
+
+### 2. Frontend (Vercel)
+1. **New Project**: Connect your GitHub repo.
+2. **Framework Preset**: `Vite`
+3. **Root Directory**: `frontend`
+4. **Environment Variables**:
+   - `VITE_API_BASE_URL`: Your Render Web Service URL (e.g., `https://portfolio-api.onrender.com`)
+5. **Deploy**: Vercel handles the rest!
+
+## Getting Started Locally
 
 ### Backend
 1. `cd backend`
 2. `npm install`
-3. Create a `.env` file (see `.env.example`)
-4. `node seed.js` (Optional: Seeds the DB with initial data)
-5. `npm start` or `npm run dev`
+3. Create a `.env` file with your email credentials.
+4. `node seed.js`
+5. `npm start`
 
 ### Frontend
 1. `cd frontend`
 2. `npm install`
-3. Create a `.env` file with `VITE_API_BASE_URL=http://localhost:5000`
+3. Create a `.env` with `VITE_API_BASE_URL=http://localhost:5000`
 4. `npm run dev`
 
 ## License
