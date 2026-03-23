@@ -6,6 +6,7 @@ export const personalInfo = {
   bio: "I remove all bugs from life.",
   location: "Indore, India",
   avatarUrl: null, // Will use a generated avatar
+  about: "I am a passionate Engineer and Developer dedicated to building intelligent systems and seamless user experiences. With a focus on AI Agent development and modern web technologies, I thrive on solving complex problems and turning ideas into functional, clean, and high-performance code. I believe that technology should be intuitive, accessible, and most importantly, bug-free.",
 };
 
 // ========== SOCIAL LINKS ==========

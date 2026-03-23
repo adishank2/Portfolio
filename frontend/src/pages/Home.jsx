@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolioData';
 import SocialLinks from '../components/SocialLinks';
-import { 
-  SiPython, SiFastapi, SiReact, SiJavascript, SiSqlite, 
-  SiFramer, SiVite, SiNodedotjs, SiTailwindcss, SiPostgresql 
+import {
+  SiPython, SiFastapi, SiReact, SiJavascript, SiSqlite,
+  SiFramer, SiVite, SiNodedotjs, SiTailwindcss, SiPostgresql
 } from 'react-icons/si';
 import './Home.css';
 
@@ -61,15 +61,15 @@ export default function Home() {
       {/* Hero Section */}
       <motion.section className="hero" variants={fadeInUp} transition={{ duration: 0.5 }}>
         <div className="hero__avatar">
-          <motion.div 
+          <motion.div
             className="hero__avatar-img"
-            animate={{ 
+            animate={{
               y: [0, -8, 0],
             }}
-            transition={{ 
-              duration: 4, 
-              repeat: Infinity, 
-              ease: "easeInOut" 
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
             }}
           >
             <img src="/avatar.png" alt={personalInfo.name} />
@@ -83,12 +83,12 @@ export default function Home() {
             <span>{personalInfo.email}</span>
             {emailCopied ? (
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
+                <polyline points="20 6 9 17 4 12" />
               </svg>
             ) : (
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
               </svg>
             )}
           </button>
@@ -106,6 +106,14 @@ export default function Home() {
       <motion.div variants={fadeInUp} transition={{ duration: 0.5 }}>
         <SocialLinks />
       </motion.div>
+
+      {/* About Me Section */}
+      <motion.section className="home-section" variants={fadeInUp} transition={{ duration: 0.5 }}>
+        <h2 className="section-title">About Me</h2>
+        <div className="about-me glass">
+          <p className="about-me__text">{personalInfo.about}</p>
+        </div>
+      </motion.section>
 
       {/* Experience Section */}
       <motion.section className="home-section" variants={fadeInUp} transition={{ duration: 0.5 }}>
@@ -156,7 +164,6 @@ export default function Home() {
             <div className="tech-item"><SiPython /><span>Python</span></div>
             <div className="tech-item"><SiFastapi /><span>FastAPI</span></div>
             <div className="tech-item"><SiReact /><span>React</span></div>
-            <div className="tech-item"><SiJavascript /><span>JavaScript</span></div>
             <div className="tech-item"><SiSqlite /><span>SQLite</span></div>
             <div className="tech-item"><SiFramer /><span>Framer</span></div>
             <div className="tech-item"><SiVite /><span>Vite</span></div>
@@ -167,7 +174,6 @@ export default function Home() {
             <div className="tech-item"><SiPython /><span>Python</span></div>
             <div className="tech-item"><SiFastapi /><span>FastAPI</span></div>
             <div className="tech-item"><SiReact /><span>React</span></div>
-            <div className="tech-item"><SiJavascript /><span>JavaScript</span></div>
             <div className="tech-item"><SiSqlite /><span>SQLite</span></div>
             <div className="tech-item"><SiFramer /><span>Framer</span></div>
             <div className="tech-item"><SiVite /><span>Vite</span></div>
