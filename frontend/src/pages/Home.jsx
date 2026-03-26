@@ -156,6 +156,37 @@ export default function Home() {
       </motion.section>
 
 
+      {/* Skills Bento Box */}
+      <motion.section className="home-section" variants={fadeInUp} transition={{ duration: 0.5 }}>
+        <h2 className="section-title">Proficiency</h2>
+        <div className="bento-grid">
+          <div className="bento-card glass">
+            <h3>Frontend Development</h3>
+            <p className="bento-tags">
+              <span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Vanilla CSS</span>
+            </p>
+          </div>
+          <div className="bento-card glass">
+            <h3>AI & Agents</h3>
+            <p className="bento-tags">
+              <span>Ollama</span><span>CrewAI</span><span>LangChain</span><span>OpenAI API</span><span>Whisper</span>
+            </p>
+          </div>
+          <div className="bento-card glass">
+            <h3>Backend Architecture</h3>
+            <p className="bento-tags">
+              <span>Python</span><span>FastAPI</span><span>Node.js</span><span>WebSockets</span><span>REST APIs</span>
+            </p>
+          </div>
+          <div className="bento-card glass">
+            <h3>DevOps & DBs</h3>
+            <p className="bento-tags">
+              <span>SQLite</span><span>PostgreSQL</span><span>Git</span><span>GitHub Actions</span><span>CI/CD</span>
+            </p>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Tech Stack Marquee */}
       <motion.section className="home-section marquee-section" variants={fadeInUp} transition={{ duration: 0.5 }}>
         <h2 className="section-title">Stack</h2>

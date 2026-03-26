@@ -17,6 +17,8 @@ const seedProjects = [
       "Built a responsive History Architecture that automatically isolates every generated project into a unique tracked folder, allowing seamless downloads of codebases as dynamic .zip file archives.",
       "Developed a stunning premium Glassmorphism React dashboard featuring interactive Agent 'About' panels, live-loading status updates, multi-tab navigation menus, and clean custom animations.",
     ],
+    githubUrl: "https://github.com/adishank2",
+    liveUrl: null,
     order: 1
   },
   {
@@ -34,6 +36,8 @@ const seedProjects = [
       "Engineered a multi-layered security framework with command validation, file-path whitelisting, input sanitization, dangerous-command blocking, and JSON-based audit logging.",
       "Developed a voice pipeline featuring wake-word detection (Porcupine), voice activity detection (VAD), STT (Whisper), and TTS (Edge TTS), with interruptible speech support.",
     ],
+    githubUrl: "https://github.com/adishank2",
+    liveUrl: null,
     order: 1
   },
   {
@@ -49,6 +53,8 @@ const seedProjects = [
       "Engineered an interactive Command Palette (Ctrl+K shortcut) with fuzzy search for rapid site navigation and external link access.",
       "Utilized Framer Motion to create smooth page transitions, staggered list animations, and interactive hover effects across the UI.",
     ],
+    githubUrl: "https://github.com/adishank2/Portfolio",
+    liveUrl: "https://portfolio-orcin-iota-ihbotfulv2.vercel.app",
   },
 ];
 
@@ -63,8 +69,8 @@ async function seedDatabase() {
     console.log('🌱 Seeding new projects...');
 
     const stmt = await db.prepare(`
-      INSERT INTO projects (company, role, status, period, location, technologies, achievements, display_order)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO projects (company, role, status, period, location, technologies, achievements, github_url, live_url, display_order)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     for (const project of seedProjects) {
@@ -76,6 +82,8 @@ async function seedDatabase() {
         project.location || 'Remote',
         JSON.stringify(project.technologies || []),
         JSON.stringify(project.achievements || []),
+        project.githubUrl || null,
+        project.liveUrl || null,
         project.order || 0
       ]);
     }

@@ -24,6 +24,8 @@ async function initDB() {
       location TEXT,
       technologies TEXT, -- Stored as JSON string
       achievements TEXT, -- Stored as JSON string
+      github_url TEXT,
+      live_url TEXT,
       display_order INTEGER DEFAULT 0
     )
   `);

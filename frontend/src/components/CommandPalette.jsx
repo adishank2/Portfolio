@@ -14,6 +14,7 @@ export default function CommandPalette({ isOpen, onClose }) {
     { name: 'Toggle Theme', path: 'theme', type: 'action', icon: 'theme' },
     { name: 'Copy Email', path: 'copy-email', type: 'action', icon: 'email' },
     { name: 'Email Resume', path: 'email-resume', type: 'action', icon: 'email' },
+    { name: 'View Source Code', path: personalInfo.repoUrl, type: 'external', icon: 'code' },
     ...socialLinks.filter(s => s.name !== 'Email').map(s => ({ 
       name: s.name, 
       path: s.url, 
@@ -75,6 +76,13 @@ export default function CommandPalette({ isOpen, onClose }) {
             <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
             <polyline points="15 3 21 3 21 9" />
             <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        );
+      case 'code':
+        return (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
           </svg>
         );
       default:
