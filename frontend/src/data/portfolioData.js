@@ -20,6 +20,12 @@ export const socialLinks = [
 // ========== PROJECTS (Home page summary) ========== 
 export const experienceSummary = [
   {
+    company: "AI Dev Team 4.0",
+    role: "Autonomous Multi-Agent Development Platform",
+    status: "Completed",
+    period: "Recent Project",
+  },
+  {
     company: "David AI",
     role: "Intelligent Voice-Activated Desktop Assistant",
     status: "Ongoing",
@@ -34,6 +40,21 @@ export const experienceSummary = [
 
 // ========== PROJECTS (Projects page detailed) ==========
 export const projects = [
+  {
+    company: "AI Dev Team 4.0",
+    role: "Autonomous Multi-Agent Development Platform",
+    period: "Recent Project",
+    location: "Personal Project",
+    technologies: ["Python", "FastAPI", "WebSocket", "CrewAI", "LangChain", "React", "Ollama", "Git REST API"],
+    achievements: [
+      "Designed a sequential framework utilizing CrewAI where 5 highly specialized personas (Product Manager, System Architect, Senior Developer, QA Analyst, and DevOps Engineer) autonomously pass outputs down a virtual pipeline, converting raw user ideas into production-ready software.",
+      "100% Local LLM Processing: Circumvented expensive API infrastructure by hard-wiring the cognitive engine to a localized Ollama server running Llama 3, allowing limitless, free software generation with absolute data privacy.",
+      "Engineered a robust, non-blocking Python backend using asyncio and WebSockets to capture deep LLM generation thoughts native to the AnyIO worker threads, streaming real-time inner dialogue directly to the React frontend.",
+      "Augmented the DevOps Agent to physically run native subprocess git commands, authenticate with the GitHub Developer API, spin up remote repositories, and push the workspace code live with zero human intervention.",
+      "Built a responsive History Architecture that automatically isolates every generated project into a unique tracked folder, allowing seamless downloads of codebases as dynamic .zip file archives.",
+      "Developed a stunning premium Glassmorphism React dashboard featuring interactive Agent 'About' panels, live-loading status updates, multi-tab navigation menus, and clean custom animations.",
+    ],
+  },
   {
     company: "David AI",
     role: "Intelligent Voice-Activated Desktop Assistant",
