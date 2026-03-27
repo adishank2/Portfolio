@@ -29,7 +29,7 @@ A modern, high-performance portfolio website built with React, Node.js, and SQLi
    - Name: `data`
    - Mount Path: `/var/lib/data`
    - Size: `1GB` (Minimum)
-5. **Initial Setup**: Once live, use the Render "Shell" to run `node seed.js` to populate your projects.
+5. **Auto-Seed**: The `build` script (`node seed.js`) runs automatically on every deploy, keeping the database in sync with your `seed.js` data.
 
 ### 2. Frontend (Vercel)
 1. **New Project**: Connect your GitHub repo.
