@@ -17,7 +17,7 @@ const seedProjects = [
       "Built a responsive History Architecture that automatically isolates every generated project into a unique tracked folder, allowing seamless downloads of codebases as dynamic .zip file archives.",
       "Developed a stunning premium Glassmorphism React dashboard featuring interactive Agent 'About' panels, live-loading status updates, multi-tab navigation menus, and clean custom animations.",
     ],
-    githubUrl: "https://github.com/adishank2",
+    githubUrl: "https://github.com/adishank2/ai-dev-team",
     liveUrl: null,
     order: 1
   },
@@ -36,9 +36,9 @@ const seedProjects = [
       "Engineered a multi-layered security framework with command validation, file-path whitelisting, input sanitization, dangerous-command blocking, and JSON-based audit logging.",
       "Developed a voice pipeline featuring wake-word detection (Porcupine), voice activity detection (VAD), STT (Whisper), and TTS (Edge TTS), with interruptible speech support.",
     ],
-    githubUrl: "https://github.com/adishank2",
+    githubUrl: "https://github.com/adishank2/david-ai",
     liveUrl: null,
-    order: 1
+    order: 2
   },
   {
     company: "Personal Portfolio",
@@ -55,6 +55,7 @@ const seedProjects = [
     ],
     githubUrl: "https://github.com/adishank2/Portfolio",
     liveUrl: "https://portfolio-orcin-iota-ihbotfulv2.vercel.app",
+    order: 3
   },
 ];
 
