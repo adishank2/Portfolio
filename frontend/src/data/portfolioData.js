@@ -23,13 +23,19 @@ export const experienceSummary = [
   {
     company: "David AI",
     role: "Intelligent Voice-Activated Desktop Assistant",
-    status: "Ongoing",
+    status: "Completed",
     period: "Personal Project",
   },
   {
     company: "Personal Portfolio",
     role: "Frontend Developer & Designer",
     status: "Completed",
+  },
+  {
+    company: "Aegis Support Agent",
+    role: "Full-Stack AI Developer",
+    status: "Completed",
+    period: "Personal Project",
   },
 ];
 
@@ -38,7 +44,7 @@ export const projects = [
   {
     company: "David AI",
     role: "Intelligent Voice-Activated Desktop Assistant",
-    period: "Ongoing",
+    period: "Completed",
     location: "Personal Project",
     technologies: ["Python", "FastAPI", "React", "Ollama", "Whisper", "WebSocket", "SQLite", "Three.js"],
     achievements: [
@@ -62,6 +68,20 @@ export const projects = [
       "Engineered an interactive Command Palette (Ctrl+K shortcut) with fuzzy search for rapid site navigation and external link access.",
       "Utilized Framer Motion to create smooth page transitions, staggered list animations, and interactive hover effects across the UI.",
     ],
+  },
+  {
+    company: "Aegis Support Agent",
+    role: "Full-Stack AI Developer",
+    period: "September 2026",
+    location: "Personal Project",
+    technologies: ["React", "FastAPI", "Python", "CSS", "WebSockets"],
+    achievements: [
+      "Designed and developed a premium glassmorphic landing page with deep chat widget integration, allowing users to trigger specific AI workflows via UI interactions.",
+      "Built a robust stateful conversational AI backend using FastAPI and WebSockets, supporting multi-turn dialogues and dynamic typing delays.",
+      "Engineered real-time JSON payload parsing to render structured, beautiful UI data cards for policy and claim statuses.",
+      "Implemented seamless chat persistence using localStorage and a simulated live agent handoff sequence with automated state transitions."
+    ],
+    repoUrl: "https://github.com/adishank2/Aegis_support_agent"
   },
 ];
 
