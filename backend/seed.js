@@ -5,8 +5,8 @@ const seedProjects = [
   {
     company: "David AI",
     role: "Intelligent Voice-Activated Desktop Assistant",
-    status: "Ongoing",
-    period: "Personal Project",
+    status: "Completed",
+    period: "Completed",
     location: "Remote",
     technologies: ["Python", "FastAPI", "React", "Ollama", "Whisper", "WebSocket", "SQLite", "Three.js"],
     achievements: [
@@ -37,6 +37,23 @@ const seedProjects = [
     githubUrl: "https://github.com/adishank2/Portfolio",
     liveUrl: "https://portfolio-orcin-iota-ihbotfulv2.vercel.app",
     order: 3
+  },
+  {
+    company: "Aegis Support Agent",
+    role: "Full-Stack AI Developer",
+    status: "Completed",
+    period: "September 2026",
+    location: "Personal Project",
+    technologies: ["React", "FastAPI", "Python", "CSS", "WebSockets"],
+    achievements: [
+      "Designed and developed a premium glassmorphic landing page with deep chat widget integration, allowing users to trigger specific AI workflows via UI interactions.",
+      "Built a robust stateful conversational AI backend using FastAPI and WebSockets, supporting multi-turn dialogues and dynamic typing delays.",
+      "Engineered real-time JSON payload parsing to render structured, beautiful UI data cards for policy and claim statuses.",
+      "Implemented seamless chat persistence using localStorage and a simulated live agent handoff sequence with automated state transitions."
+    ],
+    githubUrl: "https://github.com/adishank2/Aegis_support_agent",
+    liveUrl: null,
+    order: 4
   },
 ];
 
